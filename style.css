@@ -1,0 +1,91 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    background: hsla(0, 0%, 94%, 1);
+
+    background: linear-gradient(90deg, hsla(0, 0%, 94%, 1) 0%, hsla(348, 100%, 15%, 1) 100%);
+    
+    background: -moz-linear-gradient(90deg, hsla(0, 0%, 94%, 1) 0%, hsla(348, 100%, 15%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(0, 0%, 94%, 1) 0%, hsla(348, 100%, 15%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F0F0F0", endColorstr="#4B000F", GradientType=1 );
+}
+    .list {
+    display: none;
+}
+
+dd {
+    background-color: grey ;
+    color: #f0f0f0;
+    border-radius: 5px;
+    box-shadow: inset;
+}
+
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+    padding: 100px 20vw;
+}
+
+#blocks {
+    padding: 0;
+    margin: 0px;
+    color: #f0f0f0;
+}
+
+button {
+    padding: 0;
+    background-color: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color:#f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+button:hover {
+    cursor: pointer;
+}
+.moves {
+    display: none;
+}
+
+#belt_images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#question_display {
+    background-color: #a0a0a0;
+    font-size: large;
+    height: 250px;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    visibility: hidden;
+    position: relative;
+    top: 200%;
+    left: 30%;
+    border: #000000;
+    outline: solid #505050 5px;
+    padding-top: 10%;
+    z-index: 10;
+}
+
+#question_display_hitbox {
+    display: flex;
+    z-index: -10;
+    position: relative;
+    top: 8%;
+    left: 30%;
+    height: 310px;
+    width: 50%;
+    translate: 1000%, 100%;
+    position: absolute;
+}
+

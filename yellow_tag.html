@@ -1,0 +1,406 @@
+<!DOCTYPE html> 
+<head> 
+<meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Yellow tag test</title> 
+
+    <link rel="stylesheet" href="style.css"> 
+
+    <style> 
+
+        #cards { 
+
+            display: flex; 
+
+            align-items: center; 
+
+            justify-content: center;  
+
+            display: none;
+        } 
+
+    </style> 
+
+</head> 
+
+<body> 
+
+    <h1 style="display: inline;">Yellow tag test</h1> 
+    <hr>
+
+    <div id="cards"> 
+
+        <div id="q1"> 
+
+            <p id="quest1" class="questions">What are the 5 tenets of taekwondo in Korean, in order?</p> 
+
+            <p id="ans1" class="answers">Ye Ui, Yom, Chi, In Nae, Guk Gi, Baekjool Boolgool.</p> 
+
+            <p id="quest1_flipped" class="questions">What are Ye Ui, Yom Chi, In Nae, Guk Gi and Baekjool Boolgool in English?</p> 
+
+            <p id="ans1_flipped" class="answers">Courtesy, Integrity, Perseverence, Self Control and Indomitable Spirit.</p> 
+
+        </div> 
+
+     
+
+        <div id="q2"> 
+
+            <p id="quest2" class="questions">How do you say "Attention" in Korean?</p> 
+
+            <p id="ans2" class="answers">Charyot</p> 
+
+            <p id="quest2_flipped" class="questions">What does Charyot mean?</p> 
+
+            <p id="ans2_flipped" class="answers">Attention.</p> 
+
+        </div> 
+
+ 
+
+        <div id="q3"> 
+
+            <p id="quest3" class="questions">How do you say “Ready” in Korean?</p> 
+
+            <p id="ans3" class="answers">Junbi</p> 
+
+            <p id="quest3_flipped" class="questions">What does “Junbi” mean in English?</p> 
+
+            <p id="ans3_flipped" class="answers">Ready</p> 
+
+        </div> 
+
+ 
+
+        <div id="q4"> 
+
+            <p id="quest4" class="questions">How do you say “Back to mark” in Korean?</p> 
+
+            <p id="ans4" class="answers">Baro</p> 
+
+            <p id="quest_flipped4" class="questions">What does “Baro” mean in English</p> 
+
+            <p id="ans_flipped4" class="answers">Back to mark</p> 
+
+</div> 
+
+ 
+
+        <div id="q5"> 
+
+            <p id="quest5" class="questions">How do you say “Bow” in Korean?</p> 
+
+            <p id="ans5" class="answers">Kyong-ye</p> 
+
+            <p id="quest_flipped5" class="questions">What does “Kyong-ye” mean in English</p> 
+
+            <p id="ans_flipped" class="answers">Bow</p> 
+
+        </div> 
+
+ 
+
+        <div id="q6"> 
+
+            <p id="quest6" class="questions">How do you say “Start” in Korean?</p> 
+
+            <p id="ans6" class="answers">Si jak</p> 
+
+            <p id="quest_flipped6" class="questions">What does “Si jak” mean in English?</p> 
+
+            <p id="ans_flipped6" class="answers">Start</p> 
+
+        </div> 
+
+ 
+
+        <div id="q7"> 
+
+            <p id="quest7" class="questions">How do you say “Stop” in Korean</p> 
+
+            <p id="ans7" class="answers">Goman</p> 
+
+            <p id="quest_flipped7" class="questions">What Does “Goman” mean in English?</p> 
+
+            <p id="ans_flipped7" class="answers">Stop</p> 
+
+        </div> 
+
+ 
+
+        <div id="q8"> 
+
+            <p id="quest8" class="questions">How do you say “Relax” in Korean?</p> 
+
+            <p id="ans8" class="answers">Swiyo</p> 
+
+            <p id="quest_flipped8" class="questions">What does “Swiyo” mean in English?</p> 
+
+            <p id="ans_flipped8" class="answers">Relax</p> 
+
+        </div> 
+
+ 
+
+        <div id="q9"> 
+
+            <p id="quest9" class="questions">How do you say “Sitting stance” in Korean?</p> 
+
+            <p id="ans9" class="answers">Annun sogi</p> 
+
+            <p id="quest_flipped9" class="questions">What does “Annun Sogi” mean in English?</p> 
+
+            <p id="ans_flipped9" class="answers">Sitting stance</p> 
+
+        </div> 
+
+ 
+
+        <div id="q10"> 
+
+            <p id="quest10" class="questions">How do you say “Walking stance” in Korean?</p> 
+
+            <p id="ans10" class="answers">Gunnun sogi</p> 
+
+            <p id="quest_flipped10" class="questions">What does “Gunnun sogi” mean in English.</p> 
+
+            <p id="ans_flipped10" class="answers">Walking stance</p> 
+
+        </div> 
+
+ 
+
+        <div id="q11"> 
+
+            <p id="quest11" class="questions">How do you say “Parallel ready stance” in Korean?</p> 
+
+            <p id="ans11" class="answers">Narani junbi sogi</p> 
+
+            <p id="quest_flipped11" class="questions">What does “Narani junbi sogi” mean in English?</p> 
+
+            <p id="ans_flipped11" class="answers">Parallel ready stance</p> 
+
+        </div> 
+
+ 
+
+        <div id="q12"> 
+
+            <p id="quest12" class="questions">How do you say “Front kick” in Korean?</p> 
+
+            <p id="ans12" class="answers">Ap chagi</p> 
+
+            <p id="quest_flipped12" class="questions">What does “Ap chagi” mean in English?</p> 
+
+            <p id="ans_flipped12" class="answers">Front kick</p> 
+
+        </div> 
+
+ 
+
+        <div id="q13"> 
+
+            <p id="quest13" class="questions">How do you say “Side kick” in Korean?</p> 
+
+            <p id="ans13" class="answers">Yop chagi</p> 
+
+            <p id="quest_flipped13" class="questions">What does “Yop chagi” mean in English?</p> 
+
+            <p id="ans_flipped13" class="answers">Side kick</p> 
+
+        </div> 
+
+ 
+
+        <div id="q14"> 
+
+            <p id="quest14" class="questions">How do you say “Turning kick” in Korean?</p> 
+
+            <p id="ans14" class="answers">Dollyo chagi</p> 
+
+            <p id="quest_flipped14" class="questions">What does “Dollyo chagi" mean in English?</p> 
+
+            <p id="ans_flipped14" class="answers">Turning kick</p> 
+
+        </div> 
+
+ 
+
+        <div id="q15"> 
+
+            <p id="quest15" class="questions">How do you say “Outer forearm block” in Korean?</p> 
+
+            <p id="ans15" class="answers">Bakat palmok makgi</p> 
+
+            <p id="quest_flipped15" class="questions">What does “Bakat palmok makgi” mean in English?</p> 
+
+            <p id="ans_flipped15" class="answers">Outer forearm block</p> 
+
+        </div> 
+
+ 
+
+        <div id="q16"> 
+
+            <p id="quest16" class="questions">How do you say “Inner forearm block” in Korean?</p> 
+
+            <p id="ans16" class="answers">An palmok makgi</p> 
+
+            <p id="quest_flipped16" class="questions">What does “An palmok makgi” mean in English?</p> 
+
+            <p id="ans_flipped16" class="answers">Inner forearm block</p> 
+
+        </div> 
+
+ 
+
+        <div id="q17"> 
+
+            <p id="quest17" class="questions">How do you say “Low knifehand block” in Korean?</p> 
+
+            <p id="ans17" class="answers">Sonkal najunde makgi</p> 
+
+            <p id="quest_flipped17" class="questions">What does “Sonkal najunde makgi” mean in English?</p> 
+
+            <p id="ans_flipped17" class="answers">Low knifehand block</p> 
+
+        </div> 
+
+ 
+
+        <div id="q18"> 
+
+            <p id="quest18" class="questions">What are the 3 sections in Korean?</p> 
+
+            <p id="ans18" class="answers">Najunde, Kaunde, Nopunde</p> 
+
+            <p id="quest_flipped18" class="questions">What do “Najunde, Kaunde and Nopunde” mean in English?</p> 
+
+            <p id="ans_flipped18" class="answers">Low, Middle, High</p> 
+
+        </div> 
+
+ 
+
+        <div id="q19"> 
+
+            <p id="quest19" class="questions">How do you say “Obverse punch” in Korean?</p> 
+
+            <p id="ans19" class="answers">Baro jirugi</p> 
+
+            <p id="quest_flipped19" class="questions">What does “Baro jirugi” mean in English?</p> 
+
+            <p id="ans_flipped19" class="answers">Obverse punch</p> 
+
+        </div> 
+
+ 
+
+        <div id="q20"> 
+
+            <p id="quest20" class="questions">how do you say “Reverse punch” in Korean?</p> 
+
+            <p id="ans20" class="answers">Bandae jirugi</p> 
+
+            <p id="quest_flipped20" class="questions">What does “Bandae jirugi” mean in English?</p> 
+
+            <p id="ans_flipped20" class="answers">Reverse punch</p> 
+
+        </div> 
+
+ 
+
+        <div id="q21"> 
+
+            <p id="quest21" class="questions">How do you say “Fore-fist rotation” in Korean?</p> 
+
+            <p id="ans21" class="answers">Ap joomuk jirugi</p> 
+
+            <p id="quest_flipped21" class="questions">What does “Ap joomuk jirugi” mean in English?</p> 
+
+            <p id="ans_flipped21" class="answers">Fore-fist rotation</p> 
+
+        </div> 
+
+ 
+
+        <div id="q22"> 
+
+            <p id="quest22" class="questions">What is the name of the training hall in Korean?</p> 
+
+            <p id="ans2" class="answers">Dojang</p> 
+
+            <p id="quest_flipped22" class="questions">What is the “Dojang” in English?</p> 
+
+            <p id="ans_flipped22" class="answers">Training hall</p> 
+
+        </div> 
+
+ 
+
+        <div id="q23"> 
+
+            <p id="quest23" class="questions">What is the name of your suit in Korean?</p> 
+
+            <p id="ans23" class="answers">Dobok</p> 
+
+            <p id="quest_flipped23" class="questions">What is a “Dobok” in English?</p> 
+
+            <p id="ans_flipped23" class="answers">Your suit</p> 
+
+        </div> 
+
+ 
+
+        <div id="q24"> 
+
+            <p id="quest24" class="questions">What is the name of a belt in Korean?</p> 
+
+            <p id="ans24" class="answers">Tie (Tii-ye)</p> 
+
+            <p id="quest_flipped24" class="questions">What is a “Tie” in English?</p> 
+
+            <p id="ans_flipped24" class="answers">A belt</p> 
+
+        </div> 
+
+ 
+
+<div id="q25"> 
+
+            <p id="quest25" class="questions">What is the name of a “Taekwondo grading” in Korean?</p> 
+
+            <p id="ans25" class="answers">Simsa</p> 
+
+            <p id="quest_flipped25" class="questions">What is a “Simsa” in English?</p> 
+
+            <p id="ans_flipped25" class="answers">Grading/belt test</p> 
+
+        </div> 
+
+ 
+
+<div id="q26"> 
+
+            <p id="quest26" class="questions">What are the Korean numbers up to 5?</p> 
+
+            <p id="ans26" class="answers">Hana, Dool, Set, Net, Tasot</p> 
+
+            <p id="quest_flipped26" class="questions">What are “Hana, Dool, Set, Net, Tasot” in English?</p> 
+
+            <p id="ans_flipped26" class="answers">1, 2, 3, 4, 5</p> 
+
+        </div> 
+
+    </div> 
+
+    <button id="question_display_hitbox"></button>
+    <p id="question_display" style="display: inline-block;"></p>
+    
+    <script src="yellow_tag.js"></script> 
+
+</body> 
+
+</html>

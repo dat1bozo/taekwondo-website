@@ -1,0 +1,15 @@
+const _makgi = document.getElementById("_makgi")
+const _moves = document.getElementById("_moves")
+
+_makgi.addEventListener("click", function() {
+    if (_makgi_moves.style.display === "inline") {
+        _makgi_moves.style.display = "none";
+    } else {
+        _makgi_moves.style.display = "inline";
+    }
+})
+
+<button  id="_makgi"><dt><ins> block ( makgi)</ins></dt></button>
+            <dd><ol id="_moves" class="block-moves">
+                <li></li>
+            </ol></dd>
